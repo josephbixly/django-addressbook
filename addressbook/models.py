@@ -45,7 +45,7 @@ class Contact(models.Model):
     middle_name = models.CharField(max_length = "40", blank = True)
     title = models.CharField(max_length = "40", blank = True)
     organization = models.CharField(max_length = "50", blank = True)
-    url = models.URLField(verify_exists = False, blank = True)    
+    url = models.URLField(blank = True)    
     
     def __unicode__(self):
         return "%s %s" % (self.first_name, self.last_name)
